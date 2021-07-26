@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="THL">
+    <meta name="description" content="corp">
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- font anwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="./assets/css/grid.css"> -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <title>Stalwart</title>
+</head>
+
+<body>
+    <header id="site-header" class="fixed-top">
+        <div class="container-fluid" id="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark stroke">
+                    <h1>
+                        <a id="navbar__logo" class="navbar-brand" href="index.html">
+                            <span class="fa fa-align-right"></span>
+                            Corp Vision <span class="logo">Vision to your
+                                Future</span>
+                        </a>
+                    </h1>
+                    <button onclick="addBackgroundHeader()" id="buttonMobile"
+                        class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                        data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav mx-lg-auto">
+                            <li id="nav__item-menu" class="nav-item active">
+                                <a class="nav-link " href="">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item @@about__active">
+                                <a class="nav-link" href="">About</a>
+                            </li>
+                            <li class="nav-item @@services__active">
+                                <a class="nav-link" href="">Services</a>
+                            </li>
+                            <li class="nav-item @@contact__active">
+                                <a class="nav-link" href="">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--/search-right-->
+                    <div class="header-search">
+                        <div class='control mr-3'>
+                            <div class='btn-material'>
+                                <i class='fa fa-search icon-material-search'></i>
+                            </div>
+                        </div>
+                        <!-- full screen form controls -->
+                        <i class='icon-close fa fa-close material-icons'></i>
+                        <form action="error.html" method="GET" class='search-input'>
+                            <input class='input-search' placeholder='Start Typing' type='text'>
+                        </form>
+                    </div>
+
+                    <!--  light and dark theme -->
+                    <div class="navbar__right-themes navbar__right-item">
+                        <nav class="navigation">
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="nightmode">
+                                    <input type="checkbox" id="nightmode">
+                                    <div id="mode__themes" class="mode-container">
+                                        <i class="far fa-sun"></i>
+                                        <i class="far fa-moon"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <!-- banner -->
+    <section class="baner">
+        <div class="banner-wrap">
+            <div class="banner-slider">
+                <div id="banerSliderCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="banner-slide bg1">
+                                <div class="container">
+                                    <div class="hero-content">
+                                        <h1 data-animation="animated bounceInLeft" data-color="#fff">
+                                            We will solve your issues our vision to your future</h1>
+                                        <p data-animation="fadeInDown" class="mt-4">Lorem ipsum dolor sit amet, elit,
+                                            sed do eiusmod ut
+                                            labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nisi ut ea. </p>
+                                        <div class="cta-btn" data-animation="fadeInUp"><a href="#url"
+                                                class="btn btn-style btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="banner-slide bg2">
+                                <div class="container">
+                                    <div class="hero-content">
+                                        <h1 data-animation="fadeInDown" data-color="#fff">
+                                            Embracing success do our best, need best advice
+                                        </h1>
+                                        <p data-animation="fadeInDown" class="mt-4">Lorem ipsum dolor sit amet, elit,
+                                            sed do eiusmod ut
+                                            labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nisi ut ea. </p>
+                                        <div class="cta-btn" data-animation="fadeInDown"> <a href="#url"
+                                                class="btn btn-style btn-primary">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="banner-slide bg3">
+                                <div class="container">
+                                    <div class="hero-content">
+                                        <h1 data-animation="fadeInUp" data-color="#fff">Digital transformation driven
+                                            by technology</h1>
+                                        <p data-animation="fadeInUp" class="mt-4">Lorem ipsum dolor sit amet, elit, sed
+                                            do eiusmod ut
+                                            labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nisi ut ea. </p>
+                                        <div class="cta-btn" data-animation="fadeInDown">
+                                            <a href="#url" class="btn btn-style btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-overlay"></div>
+                            </div>
+                            <div class="hero-overlay"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="banner-slide bg4">
+                                <div class="container">
+                                    <div class="hero-content">
+                                        <h1 data-animation="flipInX" data-color="#fff">For those who believe in
+                                            leaving a mark</h1>
+                                        <p data-animation="fadeInDown" class="mt-4">Lorem ipsum dolor sit amet, elit,
+                                            sed do eiusmod ut
+                                            labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nisi ut ea. </p>
+                                        <div class="cta-btn" data-animation="fadeInUp"> <a href="#url"
+                                                class="btn btn-style btn-primary">Contact Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <div class="left-right-control">
+                        <button class="carousel-control-next slick-prev slick-arrow" aria-label="Previous" type="button"
+                            href="#banerSliderCarousel" data-slide="next"><i class="fa fa-arrow-left"></i></button>
+
+                        <button class="carousel-control-prev slick-next slick-arrow" aria-label="Next" type="button"
+                            href="#banerSliderCarousel" data-slide="prev"><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="shape">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+                        <path fill-opacity="1">
+                            <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                                values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                                                         M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
+                            </animate>
+
+                        </path>
+
+                    </svg>
+                </div>
+            </div>
+    </section>
+    <section id="aboutUs" class="about__us">
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="title-small">About Us</span>
+                    <h3 class="title-big">We make the best strategies for you, Enhancing your success</h3>
+                    <p class="mt-md-4 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        ullamco laboris nisi ut ex ea. </p>
+                    <ul class="service-list pt-lg-2 mt-4">
+                        <li class="service-link"><a href="#url"><span class="fa fa-check-circle"></span> UI/UX
+                                Design and Development</a></li>
+                        <li class="service-link"><a href="#url"><span class="fa fa-check-circle"></span> Branding
+                                Design and Identity</a></li>
+                        <li class="service-link"><a href="#url"><span class="fa fa-check-circle"></span> Mobile App
+                                Design and Development</a></li>
+                    </ul>
+                </div>
+                <div class="HomeAboutImages col-lg-6 mt-lg-0 mt-md-5 mt-4">
+                    <div class="row position-relative">
+                        <div class="col-6">
+                            <img src="./assets/images/a.jpg" alt="" class="radius-image img-fluid">
+                        </div>
+                        <div class="col-6 mt-4">
+                            <img src="./assets/images/c1.jpg" alt="" class="radius-image img-fluid mb-md-3 mb-2">
+                            <img src="./assets/images/c4.jpg" alt="" class="radius-image img-fluid mt-md-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features container-fluid" id="work">
+        <div class="container  ">
+            <div class="row main-cont-wthree-2 align-items-center">
+                <div class="col-lg-6 feature-grid-left pr-lg-5">
+                    <h5 class="title-small">Every day brings new challenges</h5>
+                    <h3 class="title-big mb-4">Creative agency focused on vision, product and people</h3>
+                    <p class="text-para">Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed,
+                        lacinia est. Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit
+                        amet laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.
+                    </p>
+                    <a href="" class="btn btn-style btn-primary mt-lg-5 mt-4">Discover More</a>
+                </div>
+                <div class="col-lg-6 feature-grid-right mt-lg-0 mt-md-5 mt-4">
+                    <div class="row">
+                        <div class="call-grids col-lg-6 ">
+                            <div class="box-wrap">
+                                <div class="icon">
+                                    <img src="./assets/images/icon1.png" alt="" class="img-fluid">
+                                </div>
+                                <h4><a href="about.html" class="title-head">Our Process</a></h4>
+                            </div>
+                        </div>
+                        <div class="call-grids col-lg-6 ">
+                            <div class="box-wrap">
+                                <div class="icon">
+                                    <img src="./assets/images/icon2.png" alt="" class="img-fluid">
+                                </div>
+                                <h4><a href="about.html" class="title-head">How We Help</a></h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="call-grids col-lg-6 ">
+                            <div class="box-wrap">
+                                <div class="icon">
+                                    <img src="./assets/images/icon3.png" alt="" class="img-fluid">
+                                </div>
+                                <h4><a href="about.html" class="title-head">UI/UX Design</a></h4>
+                            </div>
+                        </div>
+
+                        <div class="call-grids col-lg-6 ">
+                            <div class="box-wrap">
+                                <div class="icon">
+                                    <img src="./assets/images/icon4.png" alt="" class="img-fluid">
+                                </div>
+                                <h4><a href="about.html" class="title-head">Creative Ideas</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <div class="container  ">
+            <h3 class="title-big text-center">Always there for your care, our Services</h3>
+            <div class="row mt-lg-5 mt-4 text-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="grids5-info">
+                        <a href="#service" class="d-block zoom"><img src="./assets/images/s1.jpg" alt=""
+                                class="img-fluid service-image" /></a>
+                        <div class="blog-info">
+                            <a href="#service" class="title">Work Expertise</a>
+                            <p class="text-para"> Venenatis eros et, sed commodo risus. Nullam sit
+                                amet laoreet elit.</p>
+                        </div>
+                        <a href="#learnmore" class="btn btn-style1 mt-3">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="grids5-info">
+                        <a href="#service" class="d-block zoom"><img src="./assets/images/s2.jpg" alt=""
+                                class="img-fluid service-image" /></a>
+                        <div class="blog-info">
+                            <a href="#service" class="title">Product Development</a>
+                            <p class="text-para"> Venenatis eros et, sed commodo risus. Nullam sit
+                                amet laoreet elit.</p>
+                        </div>
+                        <a href="#learnmore" class="btn btn-style1 mt-3">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
+                    <div class="grids5-info">
+                        <a href="#service" class="d-block zoom"><img src="./assets/images/s3.jpg" alt=""
+                                class="img-fluid service-image" /></a>
+                        <div class="blog-info">
+                            <a href="#service" class="title">Software Development</a>
+                            <p class="text-para"> Venenatis eros et, sed commodo risus. Nullam sit
+                                amet laoreet elit.</p>
+                        </div>
+                        <a href="#learnmore" class="btn btn-style1 mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container  ">
+            <div class="title-content text-center mb-5">
+                <h3 class="title-small"> Our Gallery</h3>
+                <h3 class="title-big mx-lg-5">Successful projects we've done</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 item">
+                    <a href="./assets/images/c1.jpg" data-lightbox="example-set" data-title="Project 1"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./assets/images/c1.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 1</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 item mt-md-0 mt-4">
+                    <a href="./assets/images/c2.jpg" data-lightbox="example-set" data-title="Project 2"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./assets/images/c2.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 2</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 item mt-lg-0 mt-4">
+                    <a href="./assets/images/c3.jpg" data-lightbox="example-set" data-title="Project 3"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./assets/images/c3.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 3</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+                    <a href="./assets/images/c4.jpg" data-lightbox="example-set" data-title="Project 4"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./assets/images/c4.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 4</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+                    <a href="./assets/images/c5.jpg" data-lightbox="example-set" data-title="Project 5"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./assets/images/c5.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 5</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+                    <a href="./assets/images/c6.jpg" data-lightbox="example-set" data-title="Project 6"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./assets/images/c6.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 6</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+            <!-- Company logos -->
+            <div class="row company-logos pt-5 mt-5 justify-content-center">
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="./assets/images/brand1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="./assets/images/brand6.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <img src="./assets/images/brand3.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4 mt-md-0 mt-4">
+                    <img src="./assets/images/brand4.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-2 col-md-3 col-4 mt-lg-0 mt-4">
+                    <img src="./assets/images/brand5.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="progress-corp">
+        <div class="container  ">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="assets/images/about.jpg" alt="" class="radius-image img-fluid">
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
+                    <span class="title-small">Your success is our success</span>
+                    <h3 class="title-big mb-4 pb-lg-2">Web design, marketing & SEO solutions that get results</h3>
+                    <div class="progress-info info1">
+                        <h6 class="progress-tittle">Marketing <span class="">80%</span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-1" role="progressbar"
+                                style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-info info2">
+                        <h6 class="progress-tittle">Responsive Web design <span class="">95%</span>
+                        </h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-2" role="progressbar"
+                                style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-info info3">
+                        <h6 class="progress-tittle">Analytics <span class="">60%</span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-3" role="progressbar"
+                                style="width: 60%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-info info4 mb-0">
+                        <h6 class="progress-tittle">Web Development <span class="">85%</span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-4" role="progressbar"
+                                style="width: 85%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="feedback">
+        <div class="feedback-corp">
+            <div class="container feedback-content">
+                <h5 class="title-small text-center mb-1">Happy Clients Feedback</h5>
+                <h3 class="title-big text-center mb-sm-5 mb-4">Reviews and Testimonials</h3>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="container  ">
+                <h5 class="title-small text-center mb-1">Latest News</h5>
+                <h3 class="title-big text-center mb-sm-5 mb-4">Our insight and articles</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#blog-single" class="zoom d-block">
+                                    <img class="card-img-bottom d-block" src="assets/images/blog1.jpg"
+                                        alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body blog-details">
+                                <div class="price-review d-flex justify-content-between mb-1 align-items-center">
+                                    <p>Startup Business</p>
+                                </div>
+                                <a href="#blog-single" class="blog-desc">Business opportunity in developing a reliable
+                                    electric motor. </a>
+                            </div>
+                            <div class="card-footer">
+                                <div class="author align-items-center">
+                                    <a href="#author" class="post-author">
+                                        <img src="assets/images/team1.jpg" alt="" class="img-fluid rounded-circle">
+                                    </a>
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <span class="meta-value">by</span><a href="#author"> Jessica</a>
+                                        </li>
+                                    </ul>
+                                    <div class="date">
+                                        <p>20 March, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item mt-md-0 mt-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#blog-single" class="zoom d-block">
+                                    <img class="card-img-bottom d-block" src="assets/images/blog2.jpg"
+                                        alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body blog-details">
+                                <div class="price-review d-flex justify-content-between mb-1 align-items-center">
+                                    <p>Marketing Strategy</p>
+                                </div>
+                                <a href="#blog-single" class="blog-desc">The fledgling company builds its business
+                                    around AC motors</a>
+                            </div>
+                            <div class="card-footer">
+                                <div class="author align-items-center">
+                                    <a href="#author" class="post-author">
+                                        <img src="assets/images/team2.jpg" alt="" class="img-fluid rounded-circle">
+                                    </a>
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <span class="meta-value">by</span><a href="#author"> Elizabeth</a>
+                                        </li>
+                                    </ul>
+                                    <div class="date">
+                                        <p>20 March, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item mt-lg-0 mt-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#blog-single" class="zoom d-block">
+                                    <img class="card-img-bottom d-block" src="assets/images/blog3.jpg"
+                                        alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body blog-details">
+                                <div class="price-review d-flex justify-content-between mb-1 align-items-center">
+                                    <p>Web Development</p>
+                                </div>
+                                <a href="#blog-single" class="blog-desc">How to start a profitable home-based business
+                                    within mins?</a>
+                            </div>
+                            <div class="card-footer">
+                                <div class="author align-items-center">
+                                    <a href="#author" class="post-author">
+                                        <img src="assets/images/team3.jpg" alt="" class="img-fluid rounded-circle">
+                                    </a>
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <span class="meta-value">by</span><a href="#author"> Charlotte</a>
+                                        </li>
+                                    </ul>
+                                    <div class="date">
+                                        <p>20 March, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project-corp " id="subscribe">
+        <div class="container ">
+            <div class="bottom-info">
+                <div class="header-section text-center">
+                    <h3 class="title-big">Let’s find out how to work together</h3>
+                    <p class="mt-3 pr-lg-5">Lorem ipsum dolor sit amet elit. Velit beatae
+                        rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit
+                        amet elit.</p>
+                </div>
+                <form action="#" class="subscribe mt-5" method="post">
+                    <div class="input-group-text"><span class="fa fa-paper-plane"></span></div>
+                    <input type="email" name="email" placeholder="Your Email Address" required="">
+                    <button class="btn btn-style btn-primary">Subscibe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container ">
+            <div class="container">
+                <div class="row footer-main">
+                    <div class="col-lg-4 col-md-6 footer-sub footer-1">
+                        <div class="footer-logo mb-4">
+                            <a class="navbar-brand" href="index.html">
+                                <span class="fa fa-align-right"></span> Corp Vision <span class="logo">Vision to your
+                                    Future</span></a>
+                        </div>
+                        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                            tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
+                        <div class="social-footer mt-md-4 mt-3">
+                            <a href="#facebook" class="facebook"><span><i class="fab fa-facebook-f"></i></span></a>
+                            <a href="#twitter" class="twitter"><span><i class="fab fa-twitter"></i></span></a>
+                            <a href="#instagram" class="instagram"><span><i class="fab fa-instagram"></i></span></a>
+                            <a href="#linkedin" class="linkedin"><span><i class="fab fa-linkedin-in"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-sub footer-1 pr-lg-5 mt-md-0 mt-5">
+                        <h6 class="footer-title">Contact Info </h6>
+                        <p class="mb-2">Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.
+                        </p>
+                        <p class="mb-2">Phone Number : <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a></p>
+                        <p class="mb-2">Email : <a href="mailto:info@example.com">info@example.com</a></p>
+                        <p>Support : <a href="mailto:info@support.com">info@support.com</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-sub footer-2 mt-lg-0 mt-5">
+                        <ul>
+                            <h6 class="footer-title">Services</h6>
+                            <li><a href="#url">UI/UX Design</a></li>
+                            <li><a href="#url">Creative agency</a></li>
+                            <li><a href="#url">Positive thinking</a></li>
+                            <li><a href="#url">Marketing service</a></li>
+                            <li><a href="#url">Creative agency</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-sub footer-2 mt-lg-0 mt-5">
+                        <ul>
+                            <h6 class="footer-title">Company</h6>
+                            <li><a href="about.html"> About company</a></li>
+                            <li><a href="index.html#blog">Latest Blog posts</a></li>
+                            <li><a href="index.html#gallery">Our Gallery </a></li>
+                            <li><a href="#vision">Vision to future</a></li>
+                            <li><a href="contact.html">Get in touch</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="copyright text-center">
+        <div class="container">
+            <p class="footer-copyright">© 2021 Corp Vision. All rights reserved. Design by <a href="" target="_blank">
+                    W3Layouts</a></p>
+        </div>
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+    </section>
+</body>
+<!-- bootstrap4 -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+
+<!-- js link -->
+<script src="./assets/js/main.js"></script>
+
+</html>
